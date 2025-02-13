@@ -10,14 +10,16 @@ CREATE TABLE users (
 CREATE TABLE collections (
     id SERIAL PRIMARY KEY,
     user_id INT REFERENCES users(id) ON DELETE CASCADE,
-    name VARCHAR(255) NOT NULL
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    icon TEXT
 );
 
 CREATE TABLE items (
     id SERIAL PRIMARY KEY,
     collection_id INT REFERENCES collections(id) ON DELETE CASCADE,
     name VARCHAR(255) NOT NULL,
-    type VARCHAR(50) CHECK (type IN ('book', 'game', 'comics')),
+    type VARCHAR(50) CHECK (type IN ('manga', 'game', 'comics')),
     description TEXT,
     image_url TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP

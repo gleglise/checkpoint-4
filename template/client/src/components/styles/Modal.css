@@ -1,0 +1,87 @@
+.form-collection {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+
+/* .form-collection h1 {
+    margin-bottom: 10px;
+} */
+
+.form-collection form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.button-form-collection {
+    width: 9rem;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.185);
+}
+
+.button-form-collection:hover {
+    background-color: #f57c00;
+    transform: scale(1.1);
+    transition: transform .4s ease;
+}
+
+.input-text {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.185);
+}
+
+.select-icon {
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.185);
+}
+
+.select-your-icon-form {
+    display: flex;
+    gap: .5rem;
+}
+
+.input-form {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.185);
+}
+
+.input-name-form {
+    display: flex;
+    gap: .5rem;
+}
+
+.form-collection.toggle {
+    display: block;
+}
+
+.icone-close {
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .7rem;
+}
+
+.icone-close svg {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.icone-close svg:hover {
+    transform: scale(1.1);
+}

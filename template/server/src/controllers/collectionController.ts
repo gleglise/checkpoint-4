@@ -35,10 +35,10 @@ export const getCollection = async (req: Request, res: Response): Promise<void> 
 
 export const addCollection = async (req: Request, res: Response) => {
   try {
-    const { user_id, name } = req.body;
+    const { user_id, name, description, icon } = req.body;
     const [result] = await databaseClient.query<Rows>(
-      "INSERT INTO collections (user_id, name) VALUES (?, ?)",
-      [user_id, name]
+      "INSERT INTO collections (user_id, name, description, icon) VALUES (?, ?, ?, ?)",
+      [user_id, name, description, icon]
     );
     res.status(201).json(result[0]);
   } catch (error) {

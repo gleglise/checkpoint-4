@@ -1,0 +1,41 @@
+.home {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.categories-content {
+    display: grid;
+    width: 95%;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+}
+
+.buttonAdd {
+    cursor: pointer;
+    width: 5%;
+}
+
+.buttonAdd:hover {
+    transform: scale(1.2);
+}
