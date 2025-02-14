@@ -1,7 +1,8 @@
 # JS Monorepo
 
-This JS monorepo is a framework meant to serve as a foundation for every project following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying a pedagogical tool.
+--- Checkpoint 4 ---
+Memora est une application de collection.
+vous allez pouvoir créer votre collection et ainsi pouvoir garder un souvenir, ou bien... juste avoir envie que tout soit bien rangé à sa place.
 
 ## Setup & Use
 
